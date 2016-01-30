@@ -4,7 +4,6 @@ using System.Collections;
 public class JumpBehavior : AbstractBehavior {
 
 	public float jumpPower = 200;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -13,20 +12,15 @@ public class JumpBehavior : AbstractBehavior {
 	// Update is called once per frame
 	void Update () {
 
-		Vector2 pos = GGJHelper.Vec3ToVec2 (transform.position);
-		RaycastHit2D hit = Physics2D.Raycast (pos, Vector2.down, 0.75f, 1 << 8);
-
-		if (hit.collider == null) {
-			ToggleScripts (false);
-			return;
-		} else
-			ToggleScripts (true);
 
 		bool jumping = false;
 		inputState.GetButtonValue (Buttons.SpaceBar, out jumping);
+		float hold = inputState.GetButtonHoldTime (Buttons.SpaceBar);
 
-		if (jumping) {
-			body2D.AddForce (Vector3.up * jumpPower);
+		if (jumping && collisionState.standing && hold < .1f) {
+
+			Vector2 vel = body2D.velocity;
+			body2D.velocity = new Vector2 (vel.x, jumpPower);
 		}
 	}
 }

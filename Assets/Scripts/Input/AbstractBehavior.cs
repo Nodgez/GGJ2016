@@ -8,11 +8,13 @@ public abstract class AbstractBehavior : MonoBehaviour {
 	
 	protected InputState inputState;
 	protected Rigidbody2D body2D;
+	protected CollisionState collisionState;
 	
 	protected virtual void Awake()
 	{
 		inputState = GetComponent<InputState> ();
 		body2D = GetComponent<Rigidbody2D> ();
+		collisionState = GetComponent<CollisionState> ();
 	}
 	
 	protected virtual void ToggleScripts(bool value)

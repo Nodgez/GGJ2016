@@ -37,14 +37,16 @@ public class InputState : MonoBehaviour {
 		}
 	}
 
-	public void GetButtonHoldTime(Buttons key, out float holdTime)
+	public float GetButtonHoldTime(Buttons key)
 	{
+		float holdTime;
 		if (buttonStates.ContainsKey (key))
 			holdTime = buttonStates [key].holdTime;
 		else {
 			Debug.Log("Not Mapped");
 			holdTime = 0;
 		}
+		return holdTime;
 	}
 }
 
