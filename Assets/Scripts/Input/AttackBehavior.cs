@@ -13,8 +13,15 @@ public class AttackBehavior : AbstractBehavior {
 	void Update () {
 		bool punching = false;
 		inputState.GetButtonValue (Buttons.Puch, out punching);
+		float punchHold = inputState.GetButtonHoldTime (Buttons.Puch);
+		Debug.Log ("Punch Hold : " + punchHold);
+		if (punching && punchHold < 0.1f) {
+			hitBox.SetActive (true);
+		}
+	}
 
-		if (punching)
-			hitBox.SetActive(true);
+	public void ActivateHitBox()
+	{
+		hitBox.SetActive(true);
 	}
 }

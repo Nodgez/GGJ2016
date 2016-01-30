@@ -7,6 +7,7 @@ public class ChargeBehavior : AbstractBehavior {
 	private bool _waiting;
 	private float _timer;
 
+	public GameObject effect;
 	public float chargePower;
 	public float chargingTime = 3;
 	public TrailRenderer trail;
@@ -38,6 +39,7 @@ public class ChargeBehavior : AbstractBehavior {
 				trail.enabled = false;
 				body2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
+				
 		}
 	}
 
@@ -45,6 +47,7 @@ public class ChargeBehavior : AbstractBehavior {
 	{
 		ToggleScripts (false);
 		_waiting = true;
+		Instantiate (effect);
 		body2D.velocity = Vector2.zero;
 		body2D.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
 		yield return new WaitForSeconds(0.5f);

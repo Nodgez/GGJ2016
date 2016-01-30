@@ -8,9 +8,25 @@ public class InputState : MonoBehaviour {
 	public Vector3 gesturePosition = Vector3.zero;
 	public Direction direction = Direction.right;
 
+	public float absX;
+	public float absY;
+
+	private Rigidbody2D body2D;
+
+	void Awake()
+	{
+		body2D = GetComponent<Rigidbody2D> ();
+	}
+
 	void Update()
 	{
 		gesturePosition = Input.mousePosition;
+	}
+
+	void FixedUpdate()
+	{
+		absX = Mathf.Abs (body2D.velocity.x);
+		absY = Mathf.Abs (body2D.velocity.y);
 	}
 
 	public void SetButton(Buttons key,bool value)

@@ -38,6 +38,7 @@ public class MoveBehavior : AbstractBehavior {
 			body2D.AddForce(new Vector3((float)inputState.direction, 0, 0) * movePower * Time.deltaTime);
 			//transform.position += new Vector3 ((float)inputState.direction, 0, 0) * movePower * Time.deltaTime;
 		}
+
 	}
 		
 }
