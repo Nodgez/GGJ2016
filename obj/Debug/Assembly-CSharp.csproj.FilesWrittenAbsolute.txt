@@ -1,0 +1,17 @@
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/obj/Debug/Assembly-CSharp.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/UnityEngine.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/UnityEditor.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Mono.Cecil.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Unity.DataContract.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/kevindaly/Desktop/BMRM/bmfm-rnr-new/New Unity Project/Temp/bin/Debug/Mono.Cecil.Mdb.dll
