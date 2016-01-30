@@ -17,6 +17,12 @@ public class PlayerManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (attack.hitBox.activeSelf) {
+			ChangeAnimation (2);
+			return;
+		}
+
 		if (inputState.absY > 0)
 			ChangeAnimation (3);
 		else {
@@ -25,10 +31,6 @@ public class PlayerManager : MonoBehaviour {
 
 			if (inputState.absX > 0)
 				ChangeAnimation (1);
-		}
-			
-		if (attack.hitBox.activeSelf) {
-			ChangeAnimation (2);
 		}
 	}
 

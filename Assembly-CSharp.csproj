@@ -45,20 +45,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Expand.cs" />
-     <Compile Include="Assets\MeeseeksTimer.cs" />
-     <Compile Include="Assets\PlayerManager.cs" />
+     <Compile Include="Assets\CheckHit.cs" />
+     <Compile Include="Assets\Scripts\BulletHellBullet.cs" />
+     <Compile Include="Assets\Scripts\Expand.cs" />
      <Compile Include="Assets\Scripts\GGJHelper.cs" />
+     <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\Input\AbstractBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\AttackBehavior.cs" />
+     <Compile Include="Assets\Scripts\Input\BulletHellBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\ChargeBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Input\DirectionBehavior.cs" />
+     <Compile Include="Assets\Scripts\Input\HitBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\InputManager.cs" />
      <Compile Include="Assets\Scripts\Input\InputState.cs" />
      <Compile Include="Assets\Scripts\Input\JumpBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\MoveBehavior.cs" />
      <Compile Include="Assets\Scripts\Input\PauseGame.cs" />
+     <Compile Include="Assets\Scripts\MeeseeksTimer.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\WindowReposition.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

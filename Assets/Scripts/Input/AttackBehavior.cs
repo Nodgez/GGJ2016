@@ -14,7 +14,7 @@ public class AttackBehavior : AbstractBehavior {
 		bool punching = false;
 		inputState.GetButtonValue (Buttons.Puch, out punching);
 		float punchHold = inputState.GetButtonHoldTime (Buttons.Puch);
-		Debug.Log ("Punch Hold : " + punchHold);
+		//Debug.Log ("Punch Hold : " + punchHold);
 		if (punching && punchHold < 0.1f) {
 			hitBox.SetActive (true);
 		}
